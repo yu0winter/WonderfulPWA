@@ -8,8 +8,9 @@
     <link rel="stylesheet" type="text/css" href="../AppShell/inline.css">
     <!-- defer 表示延时执行。添加事件需要页面加载完成后执行 -->
     <script type="text/javascript" src="../AppShell/shell.js" defer="defer"></script>
-        <!-- 侵入式体验 -->
-    <link rel="manifest" href="manifest.json">
+    <script src="/scripts/main.js" defer></script>
+    <!-- 侵入式体验 -->
+    <link rel="manifest" href="/manifest.json">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-title" content="WonderfulPWA">
@@ -24,8 +25,7 @@
         <h1 class="header__title">Wonderful PWA</h1>
     </header>
     <!--内容主体-->
-    <main  class="main">
-
+    <main class="main">
     </main>
     <!-- loading动画 -->
     <div class="loader">
@@ -45,7 +45,7 @@
             <button id="toolbarItem1" tag='1' class="toolbar__Item__Button">新闻</button>
         </div>
         <div class="toolbar__item">
-            <button id="toolbarItem2" tag='2' class="toolbar__Item__Button"  style="background-color:gray;">其他</button>
+            <button id="toolbarItem2" tag='2' class="toolbar__Item__Button" style="background-color:gray;">其他</button>
         </div>
     </footer>
 </body>
