@@ -117,14 +117,6 @@ body {
     cursor: pointer;
 }
 
-.header #butRefresh {
-    background: url(../images/ic_refresh_white_24px.svg);
-}
-
-.header #butAdd {
-    background: url(../images/ic_add_white_24px.svg) center center no-repeat;
-}
-
 .header__title {
     font-weight: 400;
     font-size: 20px;
@@ -230,7 +222,8 @@ body {
 }
 
 .main {
-    padding-top: 44pt;
+    margin-top: 44pt;
+    margin-bottom: 20pt;
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     -ms-flex: 1;
