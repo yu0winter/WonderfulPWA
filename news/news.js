@@ -5,14 +5,20 @@ const main = document.querySelector('main');
 const sourceSelector = document.querySelector('#sourceSelector');
 const defaultSource = 'Time';
 
+var isFirstLoad = true;
 window.addEventListener('load', e => {
     //	updateNews();
     //	updateSources();
+
+    if (isFirstLoad == false) {
+        return;
+    }
+    isFirstLoad = false;
+
     sourceSelector.addEventListener('change', evt => updateNews(evt.target.value));
     var loader = document.getElementsByClassName('loader')[0];
     loader.style.display = '';
     updateSources().then(() => {
-        sourceSelector.value = defaultSource;
         updateNews();
 	    loader.style.display = 'none';
     });
@@ -30,7 +36,7 @@ async function updateNews(source = defaultSource) {
 function createArticle(article) {
     return `
     <div class="article">
-      <a href="${article.url}">
+      <a>
         <h2>${article.title}</h2>
         <img src="${article.urlToImage}" alt="${article.title}">
         <p>${article.description}</p>
