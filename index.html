@@ -15,23 +15,30 @@
     <!--     AppIcon for iOS -->
     <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
     <!-- 启动图 for iOS -->
-    <!-- iPhone -->
-    <link rel="apple-touch-startup-image" media="(device-width: 320px)" href="apple-touch-startup-image-320x460.png">
-    <!-- iPhone (Retina) -->
-    <link rel="apple-touch-startup-image" media="(device-width: 320px)
-         and (-webkit-device-pixel-ratio: 2)" href="apple-touch-startup-image-640x920.png">
+    <!-- iPhone 6 Plus portrait startup image -->  
+    <link href="../images/luanch/iphone6plus.png" media="(device-width: 414px) and (device-height: 736px)  
+                     and (-webkit-device-pixel-ratio: 3)  
+                     and (orientation: portrait)" rel="apple-touch-startup-image">  
+    <!-- iPhone 6 startup image -->  
+    <link href="../images/luanch/iphone6.png" media="(device-width: 375px) and (device-height: 667px)  
+                     and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">  
+     
+    <!-- iPhone 5 startup image -->  
+    <link href="../images/luanch/iphone5.png" media="(device-width: 320px) and (device-height: 568px)  
+                     and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">  
+     
     <!-- 启动图动画 -->
     <script type="text/javascript">
-    window.onload = function() {
-        setTimeout("window.location.href = 'weather/index.html'", 5000);
-    };
+    // window.onload = function() {
+    //     setTimeout("window.location.href = 'weather/index.html'", 5000);
+    // };
     </script>
     <script src="/scripts/main.js" defer></script>
 </head>
 
 <body>
     <main style="background-color: black;">
-        <img src="/images/launch2.png"  alt="启动图" width="100%" height="100%" />
+        <!-- <img src="/images/launch.png"  alt="启动图" width="100%" height="100%" /> -->
     </main>
 </body>
 

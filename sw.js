@@ -17,7 +17,13 @@ const
         '/images/launch.png',
         '/images/launch2.png',
         // App Icon
-        '/images/icons/icon-152x152.png'
+        '/images/icons/icon-152x152.png',
+    
+        '../images/luanch/iphone6plus.png',
+        '../images/luanch/iphone6.png',
+        '../images/luanch/iphone5.png'
+
+
         // ,
         // '/offline/index.html',
         // 实际业务
